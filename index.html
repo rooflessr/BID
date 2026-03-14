@@ -1,6 +1,21 @@
-// Initialize node positions randomly around center
-nodes.forEach(d => {
-    d.x = window.innerWidth/2 + (Math.random() - 0.5) * 300;
-    d.y = window.innerHeight/2 + (Math.random() - 0.5) * 300;
-});
-simulation.alpha(1).restart();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@node/your-node-pkg"></script>
+</head>
+<body>
+    <h1>Simulation</h1>
+    <div id="simulation-container"></div>
+    <script>
+        // Simulation definition
+        const simulation = ...;  // Existing simulation code
+
+        // Node initialization code
+        const node = require('your-node-package');
+        node.initialize({ param: value });
+    </script>
+</body>
+</html>
